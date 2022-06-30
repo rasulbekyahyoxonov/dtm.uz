@@ -75,20 +75,23 @@
         display: block;
         padding: 10px 15px;
     }
-    .info-a:hover {
-        border-bottom: none;
+    .infoLi:hover .info-a {
+        border-bottom: none !important;
     }
-    .dropdown-menu {
+    .dropdown-menyu {
         width: 100% !important;
         position: relative !important;
         left: 0 !important;
         top: 0 !important;
         box-shadow: none !important;
     }
-    .dropdown-menu .drop-li {
+    .infoUl .infoLi:hover > .dropdown-menyu {
+        display: none;
+    }
+    .dropdown-menyu .drop-li {
         display: block;
     }
-    .dropdown-menu .drop-li .drop-a {
+    .dropdown-menyu .drop-li .drop-a {
         padding-left: 30px;
     }
     .bars-div {
@@ -138,5 +141,8 @@
     }
     .contactUl2 {
         padding: 0;
+    }
+    .right-slide {
+        height: 400px;
     }
 }
